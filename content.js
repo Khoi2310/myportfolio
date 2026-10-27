@@ -125,5 +125,8 @@ const PORTFOLIO = {
     email: "dangkhoinguyen2310@gmail.com",
     phone: "0123 456 789",
     location: "TP. Hồ Chí Minh, Việt Nam"
-  }
+  },
+  
+  hub: { label: "Về Hub", url: "../index.html" }
 };
+

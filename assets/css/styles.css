@@ -63,6 +63,13 @@ img { max-width: 100%; display: block; }
 }
 .icon-btn:hover { transform: translateY(-1px); border-color: var(--accent); }
 .menu-btn { display: none; }
+.hub-btn {
+  height: 38px; padding: 0 16px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px;
+  font-size: .9rem; font-weight: 600; color: #fff; white-space: nowrap;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: transform .15s, box-shadow .2s;
+}
+.hub-btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
 
 /* ---------- Layout chung ---------- */
 .section { padding: 88px 24px; }
@@ -218,4 +225,6 @@ img { max-width: 100%; display: block; }
   }
   .nav-links.open { display: flex; }
   .section { padding: 64px 20px; }
+  .hub-btn { width: 38px; padding: 0; justify-content: center; }
+  .hub-btn span { display: none; }
 }

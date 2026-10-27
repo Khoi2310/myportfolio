@@ -183,7 +183,16 @@
   navLinks.addEventListener("click", () => navLinks.classList.remove("open"));
   $("menuToggle").addEventListener("click", () => navLinks.classList.toggle("open"));
 
-  $("footer").textContent = "© " + new Date().getFullYear() + " " + P.name + ". Mọi quyền được bảo lưu.";
+  /* Nút quay về Hub (ở thanh điều hướng, bên trái nút đổi giao diện) */
+  if (P.hub && P.hub.url) {
+    const hubBtn = el("a", { cls: "hub-btn", href: P.hub.url, attrs: { title: P.hub.label || "Về Hub" } }, [
+      icon("fa-th-large"),
+      el("span", { text: " " + (P.hub.label || "Về Hub") })
+    ]);
+    $("themeToggle").parentNode.insertBefore(hubBtn, $("themeToggle"));
+  }
+
+  $("footer").textContent ="© " + new Date().getFullYear() + " " + P.name + ". Mọi quyền được bảo lưu.";
 
   /* ---------- Giao diện sáng / tối ---------- */
   const root = document.documentElement;
