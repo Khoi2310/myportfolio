@@ -1,136 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-	<title>Portfolio</title>
-	<!-- css files -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-	<meta name="author" content="Hassan Ali">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 </head>
-	<body>
-		<!-- Navbar -->
-		<nav class="nav container void-background">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
-			<div class="nav-left">
-				<a href="http://medium.com/@hassanhelfi/" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-medium"></i>
-					</span>
-				</a>
-				<a href="http://github.com/helfi92" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-github"></i>
-					</span>
-				</a>
-				<a href="https://twitter.com/hassanhelfi" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-twitter"></i>
-					</span>
-				</a>				
-			</div>
+<body>
 
-			<div class="nav-right nav-menu">
-				<a class="nav-item" href="#about">About</a>
-				<a class="nav-item" href="#projects">Projects</a>
-				<a class="nav-item" href="#social">Social</a>
-			</div>
+  <!-- Thanh điều hướng (tự tạo từ content.js) -->
+  <header class="navbar" id="navbar">
+    <a href="#top" class="brand" id="brand"></a>
+    <nav class="nav-links" id="navLinks"></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Đổi giao diện sáng/tối"><i class="fa fa-moon-o"></i></button>
+      <button class="icon-btn menu-btn" id="menuToggle" aria-label="Mở menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
 
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-		</nav>
-				
-		<!-- About Me -->
-		<section id="about" class="section section-1">
-			<div class="container has-text-centered">
-				<!-- Source: https://flic.kr/p/pAZBNK -->
-				<img class="avatar" src="assets/img/profile.png">
-			</div>
-			<div class="container"></br>
-				<p class="intro">
-					Lorem Khaled Ipsum is a major key to success. To succeed you must believe. When you believe, you will succeed. Mogul talk. Find peace, life is like a water fall, you’ve gotta flow. Lion! Fan luv. Eliptical talk.
-				</p>
-			</div>
-		</section>
-		
-		<!-- Projects -->
-		<section  id="projects" class="section section-2">
-			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Projects</h3>
-				</div>
-				
-				<div class="columns is-multiline is-desktop">
-					<!-- Project 1 -->
-					<div class="column">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/project-1.jpg" alt="Image">
-									</figure>
-								</div>
-								<div>			
-									<p>
-										They don’t want us to eat. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
-									</p>
-								</div>
-							</article>
-						</div>
-					</div>
-					<!-- Project 2 -->
-					<div class="column">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/project-2.jpg" alt="Image">
-									</figure>
-								</div>
-								<div>			
-									<p>
-										Bless up. Another one. How’s business? Boomin. Don’t ever play yourself. Life is what you make it, so let’s make it.
-									</p>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" id="hero"></section>
 
-		<!-- Social -->
-		<section id="social" class="section section-3">
-			<div class="container">
-				<div class="has-text-centered">					
-					<h3 class="title is-3">Let's Socialize</h3>
-				</div>
-				<div class="social-container columns">
-					<div class="column is-6 has-text-centered">
-						<a target="_blank" href="https://ca.linkedin.com/in/hassan-ali-6132468a"><img class="" src="assets/img/linkedin.png"></a>
-					</div>
-					<div class="column is-6 has-text-centered">
-						<a target="_blank" href="https://www.facebook.com/Hassan.Helfi"><img class="" src="assets/img/facebook.png"></a>
-					</div>
-				</div>
-			</div>
-		</section>	
-		
-		<!-- Footer -->
-		<section class="section-4 has-text-centered container">
-			<a href="http://www.hassanali.me/about">Hassan Ali</a>
-		</section>
-		
-		<!-- Scripts  -->
-		<script src="controller.js"></script>		
-	</body>	
+    <!-- Các phần còn lại được tạo bởi app.js -->
+    <section class="section" id="about"></section>
+    <section class="section alt" id="education"></section>
+    <section class="section" id="awards"></section>
+    <section class="section alt" id="skills"></section>
+    <section class="section" id="projects"></section>
+    <section class="section alt" id="hobbies"></section>
+    <section class="section" id="foods"></section>
+    <section class="section alt" id="contact"></section>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <!-- Nội dung của bạn nằm trong content.js -->
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
